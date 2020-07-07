@@ -1,0 +1,75 @@
+@import "reset.css";
+
+body {
+  background-color: #f4f7fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+.controls {
+  margin-top: 25px;
+}
+
+.controls .controls__colors {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls__colors .controls__color {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.controls__btns {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.controls__btns button {
+  all: unset;
+  width: 80px;
+  background-color: white;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 0px 5px;
+}
+
+.controls__btns button:hover {
+  transform: scale(0.95);
+}
+
+.controls .controls__range {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.controls__range input[type="range"] {
+  width: 200px;
+}
